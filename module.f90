@@ -50,8 +50,8 @@ contains
         this%epr(this%ice_position:this%nx) = this%ice_permittivity ! Set permittivity of ice
         this%epr(this%rock_position:this%nx) = this%rock_permittivity ! Set permittivity of rock
 
-        open(45, file='Ex.txt', status='old') ! Open text files
-        open(29, file='Hz.txt', status='old') ! Open text files
+        open(45, file='Ex.txt', status='new') ! Open text files
+        open(29, file='Hz.txt', status='new') ! Open text files
 
     end subroutine EverythingInit
 
